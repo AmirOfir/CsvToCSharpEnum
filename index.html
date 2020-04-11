@@ -1,0 +1,14 @@
+<html>
+<script>
+function createEnum() {
+var text = document.getElementById("n").value;
+document.getElementById("o").innerHTML="public enum EnumName <br/>{<br/>&nbsp;&nbsp;" + text.split(',').join(',<br/>&nbsp;&nbsp;') + "<br/>}";
+}
+</script>
+Csv: <input id="n"  width="150"/><input type="button" onclick="createEnum()" value="Create Enum" />
+<br/>
+<br/>
+Output:<br/>
+<pre id="o" rows="20" cols="100"></pre>
+
+</html>
